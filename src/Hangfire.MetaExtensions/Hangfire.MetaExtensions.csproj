@@ -52,7 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\JetBrainsAnnotations.cs" />
+    <Compile Include="MetaClient.cs" />
+    <Compile Include="MetaClientExtensions.cs" />
+    <Compile Include="MetaClientFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThreadStorage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
