@@ -9,8 +9,8 @@ namespace Hangfire.MetaExtensions
     {
         public void OnCreating(CreatingContext filterContext)
         {
-            var contextActions = ThreadStorage<Action<CreatingContext>>.Collection;
-            foreach (var action in contextActions)
+            var lazyContextActions = ThreadStorage<Action<CreatingContext>>.Collection;
+            foreach (var action in lazyContextActions)
             {
                 action.Invoke(filterContext);
             }
