@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangfire.MetaExtensions", "src\Hangfire.MetaExtensions\Hangfire.MetaExtensions.csproj", "{65FE29DC-9277-4F95-99B9-890C8CCBD78C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangfire.MetaExtensions.Tests", "tests\Hangfire.MetaExtensions.Tests\Hangfire.MetaExtensions.Tests.csproj", "{57272624-6EE3-4540-BDF8-E0F57C51ED66}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65FE29DC-9277-4F95-99B9-890C8CCBD78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FE29DC-9277-4F95-99B9-890C8CCBD78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FE29DC-9277-4F95-99B9-890C8CCBD78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FE29DC-9277-4F95-99B9-890C8CCBD78C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57272624-6EE3-4540-BDF8-E0F57C51ED66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57272624-6EE3-4540-BDF8-E0F57C51ED66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57272624-6EE3-4540-BDF8-E0F57C51ED66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57272624-6EE3-4540-BDF8-E0F57C51ED66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
