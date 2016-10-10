@@ -41,3 +41,4 @@ client.AddOrUpdateMeta("key", new object())
 - [ ] Test `GlobalConfigurationExtensions`
 - [ ] Test using Hangfire directly
 - [ ] Detect when overriding build in key-values
+- [ ] Update nuspec
