@@ -9,7 +9,7 @@
     <licenseUrl>https://github.com/Silvenga/Hangfire.MetaExtensions/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/Silvenga/Hangfire.MetaExtensions</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>TODO</description>
+    <description>Generic extensions to dynamically store and retrieve arbitrary objects during Hangfire task creation and invocation.</description>
     <copyright>Copyright 2016</copyright>
   </metadata>
 </package>

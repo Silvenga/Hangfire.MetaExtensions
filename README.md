@@ -24,8 +24,7 @@ GlobalConfiguration.Configuration
 // ...
 
 IBackgroundJobClient client = // ...
-client.AddOrUpdateMeta("key", new object())
-       .Enqueue(() => Console.WriteLine());
+client.AddOrUpdateMeta("key", new object()).Enqueue(() => Console.WriteLine());
 
 ```
 
@@ -40,4 +39,4 @@ client.AddOrUpdateMeta("key", new object())
 - [ ] Test `GlobalConfigurationExtensions`
 - [ ] Test using Hangfire directly
 - [ ] Detect when overriding built in key-values
-- [ ] Update nuspec
+- [X] Update nuspec
