@@ -1,12 +1,11 @@
 # Hangfire.MetaExtensions
 
-[![AppVeyor](https://img.shields.io/appveyor/ci/Silvenga/hangfire-TODO.svg?maxAge=2592000&style=flat-square)](https://ci.appveyor.com/project/Silvenga/hangfire-TODO)
+[![AppVeyor](https://img.shields.io/appveyor/ci/Silvenga/hangfire-metaextensions.svg?maxAge=2592000&style=flat-square)](https://ci.appveyor.com/project/Silvenga/hangfire-metaextensions)
 
 Generic extensions to dynamically store and retrieve arbitrary objects during Hangfire task creation and invocation. 
 
 ## Install
 
-> TODO
 Latest releases can be found on [MyGet](https://www.myget.org/F/silvenga/api/v2).
 
 > TODO: Create Nuget.org packages.
@@ -36,9 +35,9 @@ client.AddOrUpdateMeta("key", new object())
 
 - [ ] Docs
 - [ ] Support materializing key-values during invocation
-- [ ] Nuget package
-- [ ] Setup CI
+- [X] Nuget package
+- [X] Setup CI
 - [ ] Test `GlobalConfigurationExtensions`
 - [ ] Test using Hangfire directly
-- [ ] Detect when overriding build in key-values
+- [ ] Detect when overriding built in key-values
 - [ ] Update nuspec
