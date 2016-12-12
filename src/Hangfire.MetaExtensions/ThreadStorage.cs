@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 
 namespace Hangfire.MetaExtensions
 {
-    public class ThreadStorage<T>
+    internal class ThreadStorage<T>
     {
         [ThreadStatic] private static IList<T> _values;
 

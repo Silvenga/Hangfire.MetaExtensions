@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Hangfire.Client;
+using Hangfire.MetaExtensions.Plugins;
 
 using JetBrains.Annotations;
 
@@ -24,6 +25,22 @@ namespace Hangfire.MetaExtensions
             }
 
             ThreadStorage<Action<CreatingContext>>.Add(context => context.SetJobParameter(key, value));
+
+            return client;
+        }
+
+        public static IBackgroundJobClient UseQueue<T>([NotNull] this IBackgroundJobClient client, [NotNull] string queueName)
+        {
+            if (client == null)
+            {
+                throw new ArgumentNullException(nameof(client));
+            }
+            if (queueName == null)
+            {
+                throw new ArgumentNullException(nameof(queueName));
+            }
+
+            client.AddOrUpdateMeta(DynamicQueue.DynamicQueueKey, queueName);
 
             return client;
         }
