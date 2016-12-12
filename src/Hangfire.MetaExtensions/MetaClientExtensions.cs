@@ -29,7 +29,7 @@ namespace Hangfire.MetaExtensions
             return client;
         }
 
-        public static IBackgroundJobClient UseQueue<T>([NotNull] this IBackgroundJobClient client, [NotNull] string queueName)
+        public static IBackgroundJobClient UseQueue([NotNull] this IBackgroundJobClient client, [NotNull] string queueName)
         {
             if (client == null)
             {
