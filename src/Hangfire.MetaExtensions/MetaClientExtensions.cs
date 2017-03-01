@@ -24,7 +24,7 @@ namespace Hangfire.MetaExtensions
                 throw new ArgumentNullException(nameof(value));
             }
 
-            ThreadStorage<Action<CreatingContext>>.Add(context => context.SetJobParameter(key, value));
+            ConsumableThreadStorage<Action<CreatingContext>>.Add(context => context.SetJobParameter(key, value));
 
             return client;
         }

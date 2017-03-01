@@ -61,7 +61,7 @@
     <Compile Include="MetaClientFilter.cs" />
     <Compile Include="Plugins\DynamicQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThreadStorage.cs" />
+    <Compile Include="ConsumableThreadStorage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
