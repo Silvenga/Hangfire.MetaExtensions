@@ -6,9 +6,6 @@ Generic extensions to dynamically store and retrieve arbitrary objects during Ha
 
 ## Install
 
-Latest releases can be found on [MyGet](https://www.myget.org/F/silvenga/api/v2).
-
-> TODO: Create Nuget.org packages.
 ```
 Install-Package Hangfire.MetaExtensions
 ```
@@ -24,19 +21,13 @@ GlobalConfiguration.Configuration
 // ...
 
 IBackgroundJobClient client = // ...
-client.AddOrUpdateMeta("key", new object()).Enqueue(() => Console.WriteLine());
+client.AddOrUpdateMeta("key", new object())
+      .Enqueue(() => Console.WriteLine());
+
+// You can even update the queue!
+client.UseQueue("dynamic-queue")
+      .Enqueue(() => Console.WriteLine());
 
 ```
 
 > Note that the value must JSON serializable and will be stored in Hangfire via the current storage strategy.
-
-## TODO
-
-- [ ] Docs
-- [ ] Support materializing key-values during invocation
-- [X] Nuget package
-- [X] Setup CI
-- [ ] Test `GlobalConfigurationExtensions`
-- [ ] Test using Hangfire directly
-- [ ] Detect when overriding built in key-values
-- [X] Update nuspec
