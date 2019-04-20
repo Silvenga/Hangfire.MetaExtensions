@@ -1,6 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net45;net46;netstandard1.3;netstandard2.0</TargetFrameworks>
+    <Authors>Silvenga</Authors>
+    <Description>Generic extensions to dynamically store and retrieve arbitrary objects during Hangfire task creation and invocation.</Description>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <IncludeSymbols>true</IncludeSymbols>
+    <RepositoryUrl>https://github.com/Silvenga/Hangfire.MetaExtensions.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Silvenga/Hangfire.MetaExtensions</PackageProjectUrl>
+    <PackageTags>Hangfire</PackageTags>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="HangFire.Core" Version="1.6.7" />
