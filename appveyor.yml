@@ -17,7 +17,9 @@ dotnet_csproj:
 build_script:
 - ps: >-
     dotnet build
+
     dotnet test
+    
     dotnet pack
 artifacts:
 - path: '**/*.nupkg'
