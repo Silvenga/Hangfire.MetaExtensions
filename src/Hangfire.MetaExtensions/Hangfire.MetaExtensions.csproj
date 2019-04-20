@@ -9,6 +9,7 @@
     <RepositoryUrl>https://github.com/Silvenga/Hangfire.MetaExtensions.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/Silvenga/Hangfire.MetaExtensions</PackageProjectUrl>
     <PackageTags>Hangfire</PackageTags>
+    <Version>0.0.0.1</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="HangFire.Core" Version="1.6.7" />
